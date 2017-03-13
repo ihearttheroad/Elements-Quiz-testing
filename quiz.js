@@ -25,7 +25,7 @@ var ELEMENT_LIST    = 'h,he,li,be,b,c,n,o,f,ne,na,mg,al,si,p,s,cl,ar,k,ca,sc,ti,
 function buildQuiz() {
     var intro_html  = '<div id="intro"><h2>How To Play</h2><p>On the next screen, enter as many chemical elements as you can think of within five minutes. Log each answer by pressing SPACEBAR or RETURN. Once your time is up, any elements you missed will be listed so anyone nearby can hear you shout, "GERMANIUUUUUUM!"</p></p><button type="button" id="start_button" title="Click to start">I’m ready!</button></div>',
         quiz_html   = '<div id="quiz"><div id="clock">5:00</div><input id="input"><p><b id="remaining"></b> elements remaining</p><ul id="solved" class="element_list"></ul></div>',
-        outro_html  = '<div id="outro"><h2>Finished!</h2><p>You named <strong id="named">0</strong> HTML5 elements in five minutes!</p><div id="share"><h2>Share Your Score</h2></div><p id="missed_message">You missed the following elements:</p><ul id="missed_elements" class="element_list"></ul><button type="button" id="replay">Again?</button>',
+        outro_html  = '<div id="outro"><h2>Finished!</h2><p>You named <strong id="named">0</strong> chemical elements in five minutes!</p><div id="share"><h2>Share Your Score</h2></div><p id="missed_message">You missed the following elements:</p><ul id="missed_elements" class="element_list"></ul><button type="button" id="replay">Again?</button>',
         placeholder = $('#quiz_wrapper').append(intro_html, quiz_html, outro_html);
 
     intro           = $('#intro');
